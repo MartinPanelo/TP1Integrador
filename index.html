@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="scripts.js"></script>
+
+		<link href="https://cdn.jsdelivr.net/npm/beercss@3.6.13/dist/cdn/beer.min.css" rel="stylesheet" />
+		<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.6.13/dist/cdn/beer.min.js"></script>
+		<script
+			type="module"
+			src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+
+		<script src="https://kit.fontawesome.com/fc73908a79.js" crossorigin="anonymous"></script>
+	</head>
+	<body class="dark">
+		<div class="background"></div>
+		<div class="titulo">
+			<h1>Calculadora</h1>
+
+			
+		</div>
+
+		<div class="contenedor">
+			<div class="entrada field label border round medium">
+				<input type="text" id="pantalla" onclick="vaciar()" autocomplete="off" />
+				<label for="pantalla">Ingresa un número</label>
+				<span id="error" class="error"></span>
+			</div>
+
+			<div class="operaciones ">
+				<div class="unitarias">
+					<p>Operaciones unitarias:</p>
+					<button  id="modulo" onclick="mod()">|Modulo|</button>
+
+					<button id="factorial" onclick="fact()">Factorial!</button>
+
+					<button id="cuadrado" onclick="cuadrado()">Cuadrado x^2</button>
+				</div>
+				<hr class="medium" />
+				<div class="binarias">
+					<p>Operaciones binarias:</p>
+
+					<button id="suma" onclick="add()">Suma +</button>
+
+					<button id="resta" onclick="res()">Resta -</button>
+
+					<button id="multiplicacion" onclick="mul()">Multiplicar *</button>
+
+					<button id="divicion" onclick="div()">Dividir /</button>
+
+				</div>
+				<hr class="medium" />
+				<div class="csv">
+					<p>Operaciones en formato CSV:</p>
+
+					<button id="sumatoria" onclick="sumatoria()">Sumatoria Σ x</button>
+
+					<button id="ordenar" onclick="ordenar()">Ordenar</button>
+
+					<button id="revertir" onclick="revertir()">Revertir</button>
+
+					<button id="quitar" onclick="quitar()">Quitar</button>
+				</div>
+				<hr class="medium" />
+
+				<div class="igual">
+					<button id="igual" onclick="eq()">Igual =</button>
+				</div>
+				<hr class="medium">
+			</div>
+
+			<h3 id="info" class="grande" title="Info sobre el número">Info sobre el número</h3>
+		</div>
+		
+
+		<div class="footer">
+			<!-- <br> -->
+			<p>Desarrollado por Panelo Martin 2024</p>
+			<a href="mailto:panelomartinn@hotmail.com">Contacto <i class="far fa-envelope"></i></a>
+			<a href="https://github.com/AADASASAS">Github del proyecto <i class="fa-brands fa-github"></i></a>
+		</div>
+	</body>
+</html>
